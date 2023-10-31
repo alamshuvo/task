@@ -5,7 +5,7 @@ function converter(temp,unit) {
         const fahrenheit = (temp * 9/5) + 32;
         const celsius = ( fahrenheit- 32) * 5/9;
         const kelvin =  celsius + 273.15
-        console.log(`the temp is ${fahrenheit } fahrenheit and the
+        return(`the temp is ${fahrenheit } fahrenheit and the
         the celsius value is ${celsius}  and
  kelvin value is ${kelvin}` );
         
@@ -16,7 +16,7 @@ function converter(temp,unit) {
 
         const kelvin = celsius + 273.15
         
-        console.log(`the temp is ${ celsius} celsius and the
+        return(`the temp is ${ celsius} celsius and the
         fahrenheit value is ${fahrenheit}, 
 kelvin value is ${kelvin}`);
     } 
@@ -26,17 +26,16 @@ kelvin value is ${kelvin}`);
 
         const kelvin = celsius + 273.15
         
-        console.log(`the temp is ${ celsius} celsius and the
+        return(`the temp is ${ celsius} celsius and the
         fahrenheit value is ${fahrenheit}, 
 kelvin value is ${kelvin}`);
     }
 
     else{
-        console.log("invalid temp value");
+        return("invalid temp value");
 
     }
     
 }
-converter(100,"kelvin");
-
+ console.log(converter(100,"kelvin"));
 
